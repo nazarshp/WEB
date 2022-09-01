@@ -1,0 +1,54 @@
+.header {
+    display: inline;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    justify-content: space-between;
+    padding-left: 200.29px;
+    padding-right: 94.26px;
+    margin-right: 103.96px;
+}
+
+.header__nav li {
+    display: inline-block;
+}
+
+.header__nav-item {
+    margin-right: 37.42px;
+    font-weight: 600;
+    font-size: 11.0889px;
+    line-height: 13px;
+}
+
+.header__title {
+    color:  #222222;
+
+}
+
+.header__login {
+    width: 28.42px;
+    height: 13.17px;
+    left: 248.11px;
+    padding-left: 42.97px;
+    top: 32.57px;
+    font-weight: 600;
+    font-size: 11.0889px;
+    line-height: 13px;
+    color: #73738D;
+}
+
+.header__try-it-for-free {
+    background: #fff;
+    border: 1.03958px solid #1943EF;
+    border-radius: 33.9597px;
+    font-size: 11.0889px;
+    color: #1943EF;
+    padding-left: 27.03px;
+    padding-right: 27.03px;
+    padding-top: 10.4px;
+    padding-bottom: 8.32px;
+
+}
