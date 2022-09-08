@@ -1,22 +1,18 @@
 .intro {
-
-    margin: 0 auto;
-    position: relative;
     margin-top: 116px;
-    margin-bottom: 74px;
 }
 
-.container.intro1 {
+.intro1 {
     display: flex;
     justify-content: space-around;
 }
 
-.container.intro2 {
+.intro2 {
     display: flex;
     justify-content: space-around;
 }
 
-.container.intro3 {
+.intro3 {
     justify-content: space-around;
     display: flex;
 }
@@ -57,7 +53,7 @@
     width: 305px;
 }
 
-.intro-block2 {
+.intro__block2 {
     max-width: 324px;
     margin-left: 63.07px;
 }
@@ -70,12 +66,11 @@
     margin-left: 62px;
 }
 
-.intro-block3 {
+.intro__block3 {
     max-width: 346px;
 }
 
 .intro__resume {
-
     width: 352.07px;
     height: 209.3px;
     left: 564.75px;
@@ -83,4 +78,48 @@
     background: #FFFFFF;
     box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
     border-radius: 20.7917px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .intro {
+        text-align: center;
+        justify-content: center;
+        margin-left: 200px;
+        margin-top: 50px;
+        width: 320px;
+    }
+
+    .intro1 {
+        display: inline;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro2 {
+        display: inline;
+        justify-content: center;
+    }
+
+    .intro3 {
+        display: inline;
+        justify-content: center;
+    }
+
+    .intro__block1 {
+        justify-content: center;
+        justify-content: center;
+    }
+
+    .intro__content {
+        justify-content: center;
+        justify-content: center;
+    }
+
+    .intro__content {
+        display: block;
+        justify-content: center;
+        justify-content: center;
+    }
 }

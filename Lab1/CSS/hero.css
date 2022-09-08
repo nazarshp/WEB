@@ -1,12 +1,11 @@
 .hero {
-position: relative;
-margin-left: 86.63px;
-margin-right: 95.01px;
-margin-top: 64.56px;
-margin-bottom: 116.66px;
+margin: 0 auto;
+width: 816.36px;
+height: 458.99px;
+left: 86.63px;
+top: 120px;
 
 }
-
 .hero-content {
     margin-top: 77.52px;
     width: 429px;

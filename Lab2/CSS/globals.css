@@ -21,7 +21,6 @@ p {
     margin: 0 auto;
     max-width: 1110px;
     align-items: center;
-    display: flex;
 }
 
 .require {
@@ -36,15 +35,8 @@ p {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .body {
-        text-align: center;
-    }
-}
-
 @media screen and (max-width: 450px) {
-:root {
-    font-size: 12px;
-}
-    
+    :root {
+        font-size: 12px;
+    }
 }
