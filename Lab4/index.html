@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="title">Shoes</h2>
+    </header>
+
+    <div class="main_div">
+        <div class="left">
+            <div class="create_shoe_div" id="create_shoe_div">
+                <a href="">Create</a>
+            </div>
+            <div class="left_block" id="left_block">
+                <div class="operations">
+                    <div class="sort_by_size">
+                        <h2>Sort by size</h2>
+                        <button id="sort_by_size_asc_button" class="button" type="submit">Sort ASC</button>
+                        <button id="sort_by_size_desc_button" class="button" type="submit">Sort DESC</button>
+                    </div>
+                    <div class="count_total_price">
+                        <h2>Total price:</h2>
+                        <div id="total_price_container"></div>
+                    </div>
+                    <form>
+                        <div>
+                            <h2>Search color</h2>
+                            <label for="" class="form_label">Color:</label><br>
+                            <input type="text" id="search_input_color">
+                        </div>
+                        <br>
+                        <button type="button" id="search_button" class="button">Search</button>
+                        <button type="button" id="cancel_search_button" class="button">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right_block" id="right_block">
+            <ul id="shoes_container"></ul>
+        </div>
+        <div class="create_shoe_block hidden" id="create_shoe_block">
+            <div class="main_div_2">
+                <h2 id="create_shoe_title">Create shoe</h2>
+                <h2 id="edit_shoe_title" class="hidden">Edit shoe</h2>
+                <div class="create_div">
+                    <div>
+                        <label for="" class="form_label">Name company:</label>
+                        <input type="text" id="create_input_name" class="input_field"><br><br>
+                    </div>
+                    <div>
+                        <label for="" class="form_label">Size:</label>
+                        <div>
+                            <select id="create_input_size">
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </div><br>
+                    </div>
+                    <div>
+                        <label for="" class="form_label">Color:</label>
+                        <div>
+                            <select id="create_input_color">
+                                <option value="black">black</option>
+                                <option value="white">white</option>
+                                <option value="brown">brown</option>
+                            </select>
+                        </div>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="" class="form_label">Price ($):</label>
+                        <input type="number" id="create_input_price" class="input_field"><br><br>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="create_button button" id="create_shoe_button">
+                        <p id="create_text">Create</p>                        
+                    </button><br>
+                    <button class="create_button button hidden" id="edit_shoe_button">
+                        <p id="edit_text">Edit</p>                        
+                    </button><br>
+                    <button class="cancel_button button" id="cancel_create_shoe_button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
