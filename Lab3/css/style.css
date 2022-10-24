@@ -1,0 +1,49 @@
+body {
+    overflow-y: hidden;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    
+}
+.title {
+    text-align: center;
+}
+
+.left_block {
+    margin-left: 180px;
+    width: 400px;
+    background-color: rgb(62, 233, 198);
+    border-radius: 20px;
+}
+
+.create_shoe {
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: rgb(200, 245, 111);
+    width: 100px;
+    height: 30px;
+}
+
+.right_block {
+    margin-right: 180px;
+    margin-left: 200;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    /*justify-content: center;*/
+    overflow-y: scroll;
+    height: 612px;
+}
+
+.card_body {
+    background-color: rgb(51, 244, 89);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+<body>
+
+    <h2 class="title">Shoes</h2>
+
+    <div class="main">
+
+        <div class="left_block">
+            <div class="create_shoe">
+                <form id="create_form">
+
+                    <h2>Create Shoes</h2>
+
+                    <div>
+                        <label for="" class="form_label">Name company:</label>
+                        <input type="text" id="create_input_name" class="input_field"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="" class="form_label">Size:</label>
+                        <div>
+                            <select id="create_input_size">
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                            </select>
+                        </div><br>
+                    </div>
+
+                    <div>
+                        <label for="" class="form_label">Color:</label>
+                        <div>
+                            <select id="create_input_color">
+                                <option value="black">black</option>
+                                <option value="white">white</option>
+                                <option value="brown">brown</option>
+                            </select>
+                        </div><br>
+                    </div>
+
+                    <div>
+                        <label for="" class="form_label">Price ($):</label>
+                        <input type="number" id="create_input_price" class="input_field"><br><br>
+                    </div>
+
+                    <button type="submit" id="create_button" class="button">Create</button>
+
+                </form>
+
+                <div class="operations">
+
+                    <div class="sort_by_size">
+                        <h2>Sort by size</h2>
+                        <button id="sort_by_size_asc_button" class="button" type="submit">Sort ASC</button>
+                        <button id="sort_by_size_desc_button" class="button" type="submit">Sort DESC</button>
+                    </div>
+
+                    <div class="count_total_price">
+                        <h2>Total price:</h2>
+                        <div id="total_price_container"></div>
+                    </div>
+
+                    <div class="search_color">
+                        <h2>Search color</h2>
+                        <form>
+                            <div>
+                                <label for="" class="form_label">Color:</label><br>
+                                <input type="text" id="search_input_color">
+                            </div>
+                            <br><br>
+                            <button type="button" id="search_button" class="button">Search</button>
+                            <button type="button" id="cancel_search_button" class="button">Cancel</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right_block">
+            <ul id="shoes_container"></ul>
+        </div>
+
+    </div>
+    <script type="module" src="./js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.item{
+    padding: 20px;
+    width: 20rem;
+    height: 40rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.item:hover{
+    transition: 0.3s;
+    transform: rotate(360deg);
+    transform: scale(1.03);
+    background-color: #cf990f;
+}
+.item >img {
+    cursor: pointer;
+    width: 20rem;
+    height: 25rem;
+}
+
+.item > h2{
+    cursor: pointer;
+    color: #333333;
+    font-weight:400; 
+}
+
+.item > p{
+    color: #333333;
+    font-weight:100; 
+}
+
+.item > h3{
+    color: #333333;
+    font-weight:500;
+}
