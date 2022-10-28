@@ -1,0 +1,48 @@
+.sorting_options{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.sorting_options > *{
+    margin-right: 40px;
+}
+
+.catalog_item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dropdown_brand:hover{ 
+    background-color: #9ec965;
+}
+
+.search_input{ 
+    margin-left: auto;
+    margin-right: 50px;
+    border: 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+}
+
+.view_more{
+    align-items: center;
+}
+
+.shoe_item{
+    padding: 20px;
+    width: 20rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.shoe_item:hover{
+    transition: 0.3s;
+    transform: rotate(360deg);
+    border-radius: 20px;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
