@@ -1,0 +1,28 @@
+.preview{
+    display: flex;
+    margin-top: 75px;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.preview_info{
+    display: flex;
+    width: 550px;
+    flex-direction: column;
+}
+
+.preview_info > h1{
+    font-size: 40px;
+    color: #8065c9;
+    font-weight: 400;
+}
+
+.preview_info > p{
+    color: #333333
+}
+
+.preview_img{
+    width: 35%
+}
