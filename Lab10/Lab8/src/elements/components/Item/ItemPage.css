@@ -1,0 +1,53 @@
+.item_info{
+    display: flex;
+}
+
+.item_description{
+    display: flex;
+    flex-direction: column;
+}
+
+.item_description > select{
+    width: 120px;
+}
+
+.model_value{
+    font-size: 36px;
+    color:#333333;
+}
+
+.power_value{
+    font-size: 18px;
+    color:#333333;
+}
+
+.stock_value{
+    font-size: 18px;
+    color:#333333;
+}
+
+.description_value{
+    font-size: 18px;
+    width: 800px;
+    color:#333333;
+    margin-bottom: 200px;
+}
+
+.operations{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.operations > button{
+    margin-right: 100px;
+}
+
+.price_value{
+    display: flex;
+    margin-left:150px;
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
