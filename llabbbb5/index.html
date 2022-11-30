@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header__nav">
+                    <div class="logo">
+                        SHOE
+                    </div>
+                    <ul id="menu" class="header__menu menu">
+                        <li class="menu__item">
+                            <button id="my_shoes" href="" class="menu__link active_menu__item">My Shoes</button>
+                        </li>
+                        <li class="menu__item">
+                            <button id="create_shoe" href="" class="menu__link">Create Shoe</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <main class="main">
+            <div class="manage_shoes">
+                <div class="manage_shoes__container">
+                    <h2 class="manage__title">Manage shoes</h2>
+
+                        <div class="operations">
+                            <div class="sort_by_size">
+                                <h2>Sort by size:</h2>
+                                <button id="sort_by_size_asc_button" class="button" type="submit">Sort ASC</button>
+                                <button id="sort_by_size_desc_button" class="button" type="submit">Sort DESC</button>
+                            </div>
+                            <div class="count_total_price">
+                                <h2>Total price:</h2>
+                                <div id="total_price_container"></div>
+                            </div>
+                            <form>
+                                <div>
+                                    <h2>Search color</h2>
+                                    <label for="" class="form_label">Color:</label><br>
+                                    <input type="text" id="search_input_color">
+                                </div>
+                                <br>
+                                <button type="button" id="search_button" class="button">Search</button>
+                                <button type="button" id="cancel_search_button" class="button">Cancel</button>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="vertical_line"></div>
+            <div class="shoes_container">
+                <ul id="shoes_list">
+                </ul>
+            </div>
+        </main>
+
+
+
+        <main id="create__page" class="hidden">
+            <div class="create_page__container">
+                <h2 class="create__title">Create shoe</h2>
+                <h2 class="create__title hidden">Edit shoe</h2>
+                <form action="#" class="create_shoe__form">
+                    <div class="input__wrapper">
+                        <label for="" class="form_lable">Shoe name</label>
+                        <input type="text" id="name_input" class="form_input">
+                    </div>
+                    <div class="input__wrapper">
+                        <label for="" class="form_lable">Size</label>
+                        <select id="shoe-size_input" class="form_input">
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper">
+                        <label for="" class="form_lable">Color</label>
+                        <select id="shoe-color_input" class="form_input">
+                            <option value="black">black</option>
+                            <option value="white">white</option>
+                            <option value="brown">brown</option>
+                        </select>
+                    </div>
+                    <div class="input__wrapper">
+                        <label for="" class="form_lable">Price</label>
+                        <input type="number" id="price_input" class="form_input">
+                    </div>
+                    <button id="submit_button" class="input_page_button">Submit</button>
+                    <button id="edit_button" class="input_page_button hidden">Edit</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
